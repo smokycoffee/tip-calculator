@@ -64,6 +64,7 @@ class ResultView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     private func layout() {
         backgroundColor = .white
         addSubview(vStackView)

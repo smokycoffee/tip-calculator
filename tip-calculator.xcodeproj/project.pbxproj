@@ -24,6 +24,7 @@
 		E29440C329AD1A8C0060C140 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C229AD1A8C0060C140 /* Result.swift */; };
 		E29440C529AD1EDB0060C140 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C429AD1EDB0060C140 /* String+Ext.swift */; };
 		E29440C729AD40E40060C140 /* UIResponder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C629AD40E40060C140 /* UIResponder+Ext.swift */; };
+		E29440C929AD4C510060C140 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C829AD4C510060C140 /* Int+Ext.swift */; };
 		E2F0CDE12983E86C00E75B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0CDE02983E86C00E75B2F /* AppDelegate.swift */; };
 		E2F0CDE32983E86C00E75B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0CDE22983E86C00E75B2F /* SceneDelegate.swift */; };
 		E2F0CDE52983E86C00E75B2F /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0CDE42983E86C00E75B2F /* CalculatorVC.swift */; };
@@ -75,6 +76,7 @@
 		E29440C229AD1A8C0060C140 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		E29440C429AD1EDB0060C140 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E29440C629AD40E40060C140 /* UIResponder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Ext.swift"; sourceTree = "<group>"; };
+		E29440C829AD4C510060C140 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		E2F0CDDD2983E86C00E75B2F /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F0CDE02983E86C00E75B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F0CDE22983E86C00E75B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				E22DDB2529ABD47400682357 /* UIView+Ext.swift */,
 				E29440C429AD1EDB0060C140 /* String+Ext.swift */,
 				E29440C629AD40E40060C140 /* UIResponder+Ext.swift */,
+				E29440C829AD4C510060C140 /* Int+Ext.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				E2F0CDE32983E86C00E75B2F /* SceneDelegate.swift in Sources */,
 				E22DDB1C29ABBCE600682357 /* ThemeColor.swift in Sources */,
 				E22DDB2629ABD47400682357 /* UIView+Ext.swift in Sources */,
+				E29440C929AD4C510060C140 /* Int+Ext.swift in Sources */,
 				E29440C529AD1EDB0060C140 /* String+Ext.swift in Sources */,
 				E22DDB2429ABC55B00682357 /* LabelFactory.swift in Sources */,
 				E22DDB2B29AC249C00682357 /* Tip.swift in Sources */,
