@@ -20,6 +20,9 @@
 		E22DDB2829ABFD0B00682357 /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DDB2729ABFD0B00682357 /* AmountView.swift */; };
 		E22DDB2B29AC249C00682357 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DDB2A29AC249C00682357 /* Tip.swift */; };
 		E22DDB2D29AC24C000682357 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DDB2C29AC24C000682357 /* HeaderView.swift */; };
+		E29440C129AD199D0060C140 /* CalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C029AD199D0060C140 /* CalculatorVM.swift */; };
+		E29440C329AD1A8C0060C140 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C229AD1A8C0060C140 /* Result.swift */; };
+		E29440C529AD1EDB0060C140 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29440C429AD1EDB0060C140 /* String+Ext.swift */; };
 		E2F0CDE12983E86C00E75B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0CDE02983E86C00E75B2F /* AppDelegate.swift */; };
 		E2F0CDE32983E86C00E75B2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0CDE22983E86C00E75B2F /* SceneDelegate.swift */; };
 		E2F0CDE52983E86C00E75B2F /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F0CDE42983E86C00E75B2F /* CalculatorVC.swift */; };
@@ -67,6 +70,9 @@
 		E22DDB2729ABFD0B00682357 /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		E22DDB2A29AC249C00682357 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		E22DDB2C29AC24C000682357 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E29440C029AD199D0060C140 /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
+		E29440C229AD1A8C0060C140 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E29440C429AD1EDB0060C140 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		E2F0CDDD2983E86C00E75B2F /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F0CDE02983E86C00E75B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F0CDE22983E86C00E75B2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 			children = (
 				E22DDB2029ABBD1D00682357 /* UIColor+Ext.swift */,
 				E22DDB2529ABD47400682357 /* UIView+Ext.swift */,
+				E29440C429AD1EDB0060C140 /* String+Ext.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -156,8 +163,17 @@
 			isa = PBXGroup;
 			children = (
 				E22DDB2A29AC249C00682357 /* Tip.swift */,
+				E29440C229AD1A8C0060C140 /* Result.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		E29440BF29AD19830060C140 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E29440C029AD199D0060C140 /* CalculatorVM.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		E2F0CDD42983E86C00E75B2F = {
@@ -184,6 +200,7 @@
 		E2F0CDDF2983E86C00E75B2F /* tip-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				E29440BF29AD19830060C140 /* viewModel */,
 				E22DDB2929AC249300682357 /* model */,
 				E22DDB2229ABC54B00682357 /* ffactory */,
 				E22DDB1F29ABBD0E00682357 /* extension */,
@@ -371,6 +388,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29440C329AD1A8C0060C140 /* Result.swift in Sources */,
+				E29440C129AD199D0060C140 /* CalculatorVM.swift in Sources */,
 				E22DDB2829ABFD0B00682357 /* AmountView.swift in Sources */,
 				E22DDB1E29ABBCF000682357 /* ThemeFont.swift in Sources */,
 				E2F0CDE52983E86C00E75B2F /* CalculatorVC.swift in Sources */,
@@ -382,6 +401,7 @@
 				E2F0CDE32983E86C00E75B2F /* SceneDelegate.swift in Sources */,
 				E22DDB1C29ABBCE600682357 /* ThemeColor.swift in Sources */,
 				E22DDB2629ABD47400682357 /* UIView+Ext.swift in Sources */,
+				E29440C529AD1EDB0060C140 /* String+Ext.swift in Sources */,
 				E22DDB2429ABC55B00682357 /* LabelFactory.swift in Sources */,
 				E22DDB2B29AC249C00682357 /* Tip.swift in Sources */,
 				E22DDB1929ABB9B000682357 /* SplitInputView.swift in Sources */,
