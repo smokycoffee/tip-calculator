@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22ADAC729AE7E780011976F /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22ADAC629AE7E780011976F /* Double+Ext.swift */; };
+		E22ADACC29AE87350011976F /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22ADACB29AE87350011976F /* AudioPlayerService.swift */; };
+		E22ADACF29AE8B7B0011976F /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E22ADACE29AE8B7B0011976F /* click.m4a */; };
 		E22DDB1129ABB8B600682357 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DDB1029ABB8B600682357 /* LogoView.swift */; };
 		E22DDB1329ABB96A00682357 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DDB1229ABB96A00682357 /* ResultView.swift */; };
 		E22DDB1529ABB98200682357 /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DDB1429ABB98200682357 /* BillInputView.swift */; };
@@ -59,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E22ADAC629AE7E780011976F /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		E22ADACB29AE87350011976F /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		E22ADACE29AE8B7B0011976F /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
 		E22DDB1029ABB8B600682357 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		E22DDB1229ABB96A00682357 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		E22DDB1429ABB98200682357 /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
@@ -122,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22ADAC829AE87040011976F /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				E22ADACE29AE8B7B0011976F /* click.m4a */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		E22ADACA29AE87280011976F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				E22ADACB29AE87350011976F /* AudioPlayerService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		E22DDB0F29ABB8A900682357 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +175,7 @@
 				E29440C429AD1EDB0060C140 /* String+Ext.swift */,
 				E29440C629AD40E40060C140 /* UIResponder+Ext.swift */,
 				E29440C829AD4C510060C140 /* Int+Ext.swift */,
+				E22ADAC629AE7E780011976F /* Double+Ext.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -206,6 +229,8 @@
 		E2F0CDDF2983E86C00E75B2F /* tip-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				E22ADACA29AE87280011976F /* service */,
+				E22ADAC829AE87040011976F /* resource */,
 				E29440BF29AD19830060C140 /* viewModel */,
 				E22DDB2929AC249300682357 /* model */,
 				E22DDB2229ABC54B00682357 /* ffactory */,
@@ -370,6 +395,7 @@
 				E2F0CDED2983E86D00E75B2F /* LaunchScreen.storyboard in Resources */,
 				E2F0CDEA2983E86D00E75B2F /* Assets.xcassets in Resources */,
 				E2F0CDE82983E86C00E75B2F /* Main.storyboard in Resources */,
+				E22ADACF29AE8B7B0011976F /* click.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +424,7 @@
 				E29440C329AD1A8C0060C140 /* Result.swift in Sources */,
 				E29440C129AD199D0060C140 /* CalculatorVM.swift in Sources */,
 				E22DDB2829ABFD0B00682357 /* AmountView.swift in Sources */,
+				E22ADAC729AE7E780011976F /* Double+Ext.swift in Sources */,
 				E22DDB1E29ABBCF000682357 /* ThemeFont.swift in Sources */,
 				E2F0CDE52983E86C00E75B2F /* CalculatorVC.swift in Sources */,
 				E22DDB1129ABB8B600682357 /* LogoView.swift in Sources */,
@@ -405,6 +432,7 @@
 				E22DDB2129ABBD1D00682357 /* UIColor+Ext.swift in Sources */,
 				E22DDB1329ABB96A00682357 /* ResultView.swift in Sources */,
 				E2F0CDE12983E86C00E75B2F /* AppDelegate.swift in Sources */,
+				E22ADACC29AE87350011976F /* AudioPlayerService.swift in Sources */,
 				E2F0CDE32983E86C00E75B2F /* SceneDelegate.swift in Sources */,
 				E22DDB1C29ABBCE600682357 /* ThemeColor.swift in Sources */,
 				E22DDB2629ABD47400682357 /* UIView+Ext.swift in Sources */,

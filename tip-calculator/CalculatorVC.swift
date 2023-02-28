@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 import Combine
+import CombineCocoa
 
 class CalculatorVC: UIViewController {
     
@@ -35,11 +36,29 @@ class CalculatorVC: UIViewController {
     private let vm = CalculatorVM()
     private var cancellables = Set<AnyCancellable>()
     
+    private lazy var viewTapPublisher: AnyPublisher<Void, Never> = {
+        let tapGesture = UITapGestureRecognizer(target: self, action: nil)
+        view.addGestureRecognizer(tapGesture)
+        return tapGesture.tapPublisher.flatMap { _ in
+            Just(())
+        }.eraseToAnyPublisher()
+    }()
+    
+    private lazy var logoViewTapPublisher: AnyPublisher<Void, Never> = {
+        let tapGesture = UITapGestureRecognizer(target: self, action: nil)
+        tapGesture.numberOfTapsRequired = 2
+        view.addGestureRecognizer(tapGesture)
+        return tapGesture.tapPublisher.flatMap { _ in
+            Just(())
+        }.eraseToAnyPublisher()
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         layout()
         bind()
+        observe()
     }
     
     private func bind() {
@@ -48,13 +67,24 @@ class CalculatorVC: UIViewController {
             print("bill: \(bill)")
         }.store(in: &cancellables)
         
-        let input = CalculatorVM.Input(billPublisher: billInputView.valuePublisher, tipPublisher: tipInputView.valuePublisher, splitPublisher: splitInputView.valuePublisher)
+        let input = CalculatorVM.Input(billPublisher: billInputView.valuePublisher, tipPublisher: tipInputView.valuePublisher, splitPublisher: splitInputView.valuePublisher, logoViewTapPublisher: logoViewTapPublisher)
         
         let output = vm.transform(input: input)
         output.updateViewPublisher.sink { [unowned self] result in
             resultView.configure(result: result)
             print(">>>>>> \(result)")
-        }.store(in: &cancellables) 
+        }.store(in: &cancellables)
+        
+        output.resultCalculatorPublisher.sink { _ in
+            print("hey, reset form")
+        }.store(in: &cancellables)
+    }
+    
+    private func observe() {
+        viewTapPublisher.sink { [unowned self] value in
+            view.endEditing(true)
+        }.store(in: &cancellables)
+        
     }
     
     private func layout() {
